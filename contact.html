@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kshatriya</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+    <!--Navigation-->
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <a id="site-logo" href="index.html">
+                    <h1 class="text-red">For a change</h1>
+                    <p>A Kshatriya charity.</p>
+                </a>
+            </div>
+            <div class="col-2 menu-item">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="col-2 menu-item">
+                <a href="about.html">About</a>
+            </div>
+            <div class="col-2 menu-item">
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid" id="about-jumbotron">
+        <div class="container">
+            <h1>Contact Us</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Send us a message</h1>
+        <hr>
+        <form role="form" method="post" action="contact.php">
+            <div class="form-group">
+                <label for="name">Your name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="First & last name" value="Bruce Wayne">
+                <!--?php echo "<p class="text-danger"> $errName </p>" ?-->
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <!--?php echo "<p class='text-danger'>$errEmail</p>";?-->
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                <!--?php echo "<p class='text-danger'>$errMessage</p>";?-->
+            </div>
+            <button type="submit" class="btn">Send</button>
+        </form>
+        <hr>
+        <h2>Or, email us at </h2>
+    </div>
+
+</body>
+
+</html>
